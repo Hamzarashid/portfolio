@@ -1,0 +1,25 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* html{
+	background-color: #1F2937;
+} */
+
+.greyDiv {
+	background-color: #242E3C;
+}
+
+.high{
+	font-family: 'Roboto', sans-serif;
+}
+
+.gray{
+	color: #727986;
+}
+
+.Mcard{
+	margin-top: 5.30rem;
+}
