@@ -97,7 +97,7 @@ const Footer = () => {
         </a>
       </div>
       <p className="pt-4  text-xl text-gray-800 dark:text-gray-100 text-center ">
-           All Right Resceved {today.getFullYear()}
+           All Right Reserved {today.getFullYear()}
       </p>
     </div>
   );

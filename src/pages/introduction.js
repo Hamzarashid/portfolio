@@ -83,7 +83,7 @@ export const Introduction = () => {
             wearing a pirate hat."
           </p>
           <div className="flex justify-center pt-8 ">
-            <a href="https://drive.google.com/file/d/1M5WIMGiWCr7Y9Yn4zChHcATpsyXbSOlB/view" target="_blank" className="border-4 border-yellow-500 rounded-full text-xs sm:text-xl font-medium text-gray-100 dark:text-gray-300 px-4 py-2 hover:border-gray-300 " rel="noreferrer">
+            <a href="https://drive.google.com/file/d/1OBJsF9BIdFffRHCPJLzCnwe_3EdNjGTU/view?usp=sharing" target="_blank" className="border-4 border-yellow-500 rounded-full text-xs sm:text-xl font-medium text-gray-100 dark:text-gray-300 px-4 py-2 hover:border-gray-300 " rel="noreferrer">
               Download CV
             </a>
           </div>

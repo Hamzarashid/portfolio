@@ -7,9 +7,6 @@ import { About } from "./pages/about";
 import { Services } from "./pages/services";
 import Footer from "./components/footer";
 
-
-
-
 const App = () => {
   return (
       <div className=" bg-gray-50 dark:bg-gray-800 scroll-smooth">
@@ -24,7 +21,6 @@ const App = () => {
           <Services />
         </div>
         <div className="2xl:container 2xl:mx-auto">
-
           <Footer />
         </div>
       </div>
