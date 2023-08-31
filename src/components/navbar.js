@@ -3,7 +3,7 @@ import { Menu2 } from "tabler-icons-react";
 // import {ReactComponent as Logo} from "../img/H.svg"
 const Navbar = () => {
   const [state, setstate] = useState(false);
-  const [colorTheme, setTheme] = useState(false);
+  const [colorTheme, setTheme] = useState(true);
   const isMounted = useRef(false);
   const darkMode = () => {
     let htmlClasses = document.querySelector("html").classList;
@@ -25,7 +25,7 @@ const Navbar = () => {
   useEffect(() => {
     const mode = window.localStorage.getItem("toogle");
     setTheme(JSON.parse(mode));
-    // darkMode()
+    darkMode();
   }, []);
 
   useEffect(() => {
@@ -83,7 +83,6 @@ const Navbar = () => {
             <div className="relative ">
               <div>
                 <img alt="Logo" src="./img/logo.svg" width={85} />
-
               </div>
             </div>
 
@@ -93,7 +92,8 @@ const Navbar = () => {
                   <a
                     href="https://www.facebook.com/hamza.rashid3/"
                     target="_blank"
-                    className=" flex items-center md:ml-6  hover:scale-110 motion-reduce:transform-none transition duration-300 ease-linear text-black dark:text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white " rel="noreferrer"
+                    className=" flex items-center md:ml-6  hover:scale-110 motion-reduce:transform-none transition duration-300 ease-linear text-black dark:text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
+                    rel="noreferrer"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,8 @@ const Navbar = () => {
                   <a
                     href="https://www.linkedin.com/in/hamzarashid1"
                     target="_blank"
-                    className=" flex items-center md:ml-6  hover:scale-110 motion-reduce:transform-none transition duration-300 ease-linear text-black dark:text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" rel="noreferrer"
+                    className=" flex items-center md:ml-6  hover:scale-110 motion-reduce:transform-none transition duration-300 ease-linear text-black dark:text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                    rel="noreferrer"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +140,8 @@ const Navbar = () => {
                   <a
                     href="https://github.com/Hamzarashid"
                     target="_blank"
-                    className=" flex items-center md:ml-6 transition duration-300 ease-linear  hover:scale-110 motion-reduce:transform-none  text-black dark:text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" rel="noreferrer"
+                    className=" flex items-center md:ml-6 transition duration-300 ease-linear  hover:scale-110 motion-reduce:transform-none  text-black dark:text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                    rel="noreferrer"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +204,10 @@ const Navbar = () => {
           </div>
         </div>
         {state && (
-          <div className="md:hidden transition duration-500 ease-linear" id="mobile-menu">
+          <div
+            className="md:hidden transition duration-500 ease-linear"
+            id="mobile-menu"
+          >
             <div className="px-2 pt-2 pb-3 space-y-1 text-center ">
               <a
                 href="#intro"
@@ -236,7 +241,8 @@ const Navbar = () => {
               <a
                 href="https://www.facebook.com/hamza.rashid3/"
                 target="_blank"
-                className=" flex items-center md:ml-6  hover:scale-110 motion-reduce:transform-none dark:bg-gray-900 p-1 rounded-full text-black dark:text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white " rel="noreferrer"
+                className=" flex items-center md:ml-6  hover:scale-110 motion-reduce:transform-none dark:bg-gray-900 p-1 rounded-full text-black dark:text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
+                rel="noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -257,7 +263,8 @@ const Navbar = () => {
               <a
                 href="https://www.linkedin.com/in/hamzarashid1"
                 target="_blank"
-                className=" flex items-center md:ml-6  hover:scale-110 motion-reduce:transform-none dark:bg-gray-900 p-1 rounded-full text-black dark:text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" rel="noreferrer"
+                className=" flex items-center md:ml-6  hover:scale-110 motion-reduce:transform-none dark:bg-gray-900 p-1 rounded-full text-black dark:text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                rel="noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -282,7 +289,8 @@ const Navbar = () => {
               <a
                 href="https://github.com/Hamzarashid"
                 target="_blank"
-                className=" flex items-center md:ml-6  hover:scale-110 motion-reduce:transform-none dark:bg-gray-900 p-1 rounded-full text-black dark:text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" rel="noreferrer"
+                className=" flex items-center md:ml-6  hover:scale-110 motion-reduce:transform-none dark:bg-gray-900 p-1 rounded-full text-black dark:text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                rel="noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

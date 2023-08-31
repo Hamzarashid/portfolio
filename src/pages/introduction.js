@@ -63,7 +63,7 @@ export const Introduction = () => {
       </div>
 
       <div className="relative pt-20 lg:pt-0  ">
-          <div className="absolute bg-black inset-0 opacity-5   "></div>
+        <div className="absolute bg-black inset-0 opacity-5   "></div>
         <div className="relative ">
           <h2 className="text-4xl .high  font-bold tracking-wide text-gray-100 dark:text-gray-300 sm:text-6xl text-center">
             Hello, <span className="text-yellow-500">I am</span>
@@ -83,7 +83,12 @@ export const Introduction = () => {
             wearing a pirate hat."
           </p>
           <div className="flex justify-center pt-8 ">
-            <a href="https://drive.google.com/file/d/1OBJsF9BIdFffRHCPJLzCnwe_3EdNjGTU/view?usp=sharing" target="_blank" className="border-4 border-yellow-500 rounded-full text-xs sm:text-xl font-medium text-gray-100 dark:text-gray-300 px-4 py-2 hover:border-gray-300 " rel="noreferrer">
+            <a
+              href="https://drive.google.com/file/d/1du8ySWEoclKdb6Syg8-5haY6eCVMwjay/view?usp=sharing"
+              target="_blank"
+              className="border-4 border-yellow-500 rounded-full text-xs sm:text-xl font-medium text-gray-100 dark:text-gray-300 px-4 py-2 hover:border-gray-300 "
+              rel="noreferrer"
+            >
               Download CV
             </a>
           </div>
