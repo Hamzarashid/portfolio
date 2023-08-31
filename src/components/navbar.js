@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Menu2 } from "tabler-icons-react";
-// import {ReactComponent as Logo} from "../img/H.svg"
 const Navbar = () => {
   const [state, setstate] = useState(false);
   const [colorTheme, setTheme] = useState(true);
